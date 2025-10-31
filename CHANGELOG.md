@@ -1,4 +1,4 @@
-# Revision history for json-to-db
+# Revision history for json-relational-mapper
 
 ## 0.1.0.0 -- YYYY-mm-dd
 

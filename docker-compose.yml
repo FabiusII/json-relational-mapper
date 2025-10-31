@@ -10,7 +10,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - db-data:/var/lib/postgresql/json-to-db-data
+      - db-data:/var/lib/postgresql/json-relational-mapper-data
 
 volumes:
   db-data:
