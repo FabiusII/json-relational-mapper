@@ -11,7 +11,7 @@ cabal run json-relation-mapper -- --config /path/to/your/dbconfig.yml --data /pa
 ```
 
 ## Configuration
-Take a look at the [db_map.yml](https://github.com/FabiusII/json-relation-mapper/blob/main/db_map.yml) file for an example configuration in relation to the data file [order-states.jsonl](https://github.com/FabiusII/json-relation-mapper/blob/main/order-states.jsonl). You have to specify the database connection parameters, the schema of your relational database and the mapping from json paths to table columns.
+Take a look at the [db_map.yml](https://github.com/FabiusII/json-relation-mapper/blob/main/db_map.yml) file for an example configuration in relation to the data file [order-states.jsonl](https://github.com/FabiusII/json-relational-mapper/blob/main/order-states.jsonl). You have to specify the database connection parameters, the schema of your relational database and the mapping from json paths to table columns.
 Data files should be in jsonlines format, i.e. one json object per line. 
 
 ## Additional notes
