@@ -7,7 +7,7 @@ For now you still have to compile the program yourself, for which you need cabal
 After you installed it, run:
 ```
 cabal build
-cabal run json-relation-mapper -- --config /path/to/your/dbconfig.yml --data /path/to/your/data.jsonl
+cabal run json-relational-mapper -- --config /path/to/your/dbconfig.yml --data /path/to/your/data.jsonl
 ```
 
 ## Configuration
