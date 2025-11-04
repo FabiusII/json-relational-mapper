@@ -5,7 +5,6 @@ module Main where
 import Data.Aeson as Json
 import Data.Aeson.Key (fromString)
 import Data.Aeson.KeyMap (lookup)
-import Data.List (transpose)
 import Data.Text.Lazy qualified as LT
 import Data.Text.Lazy.Encoding (encodeUtf8)
 import Data.Yaml as Yaml
@@ -13,9 +12,6 @@ import Database.PostgreSQL.Simple (ConnectInfo)
 import DatabaseConfig
 import Prelude hiding (lookup)
 import System.Environment (getArgs)
-
-extendList :: Int -> [a] -> [a]
-extendList n xs = xs ++ replicate (n - length xs) (last xs)
 
 getFromSourcePath :: Json.Value -> [String] -> [Json.Value]
 getFromSourcePath v [] = [v]
