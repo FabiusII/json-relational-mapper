@@ -30,8 +30,7 @@ produceInsertParams tableSetter v =
   concatMap
     ( \t ->
         let valsPerSourcePath = map (getFromSourcePath v) (sourcePaths t)
-            extendedLists = map (extendList (maximum (map length valsPerSourcePath))) valsPerSourcePath
-            valsPerRow = transpose extendedLists
+            cartesianProduct = sequence valsPerSourcePath
          in map
               ( \vs ->
                   InsertParams
@@ -40,7 +39,7 @@ produceInsertParams tableSetter v =
                       insertValues = vs
                     }
               )
-              valsPerRow
+              cartesianProduct
     )
     tableSetter
 
